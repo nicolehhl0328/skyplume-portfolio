@@ -1,0 +1,40 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download portfolio
+        run: |
+          mkdir -p public/assets/ui-screens
+          base="https://aew47btvcz.xdr.no"
+          for file in index.html styles.css script.js assets/high-fidelity-ui.png assets/logo-animation.mp4 assets/logo-mark.png assets/logo-poster.png assets/lucide.min.js assets/ui-screens/01-splash.png assets/ui-screens/02-services.png assets/ui-screens/03-home.png assets/ui-screens/04-route-detail.png assets/ui-screens/05-safety.png; do
+            curl --fail --location --retry 3 --create-dirs -o "public/$file" "$base/$file"
+          done
+          touch public/.nojekyll
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
