@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Skyplume: a public understanding and participation platform for urban low-altitude mobility in Shenzhen."
+    />
+    <title>Skyplume | Urban Low-Altitude Public Experience</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/logo-mark.png" alt="" />
+        </span>
+        <span>云游低空</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="作品集章节">
+        <a href="#context">背景</a>
+        <a href="#research">研究</a>
+        <a href="#strategy">策略</a>
+        <a href="#experience">体验</a>
+        <a href="#validation">验证</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" class="active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中</button>
+        </div>
+        <a class="header-action" href="https://www.figma.com/make/TCEBBaUUOen8cS0CfaBwaT/%E9%AB%98%E4%BF%9D%E7%9C%9F%E5%AE%8C%E6%95%B4%E8%AE%BE%E8%AE%A1?fullscreen=1&amp;t=eEcyIy5qZyGZuvjI-1&amp;code-node-id=0-9">
+          <span>查看设计</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top" data-section="项目">
+        <img class="hero-video logo-entrance" src="assets/logo-poster.png" alt="Skyplume logo" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">UX / Service Design · Shenzhen · 2026</p>
+          <h1>云游低空</h1>
+          <p class="hero-subtitle">城市低空公共感知与协商系统</p>
+        </div>
+
+        <div class="hero-meta reveal">
+          <p>
+            当无人机进入高密度城市生活，设计如何让一次陌生飞行变得
+            <strong>可感知、可解释、可反馈、可协商</strong>？
+          </p>
+          <dl>
+            <div><dt>角色</dt><dd>独立研究与体验设计</dd></div>
+            <div><dt>范围</dt><dd>居民端 App + 治理端工作台</dd></div>
+            <div><dt>阶段</dt><dd>概念验证与高保真原型</dd></div>
+          </dl>
+        </div>
+
+        <button class="replay-button" type="button" aria-label="重新播放 Logo 动效">
+          <i data-lucide="rotate-ccw"></i>
+        </button>
+
+        <a class="scroll-cue" href="#overview">
+          <span>从问题开始</span>
+          <i data-lucide="arrow-down"></i>
+        </a>
+      </section>
+
+      <section class="overview section-light" id="overview" data-section="命题">
+        <div class="section-shell">
+          <div class="section-index">01 / Project thesis</div>
+          <div class="overview-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">项目命题</p>
+              <h2>城市看得见飞行，<br />居民却看不懂它。</h2>
+            </div>
+            <div class="overview-statement reveal">
+              <p class="lead">
+                现有低空系统解决了“如何安全地飞”，却很少回答航线之下的人：
+                <mark>它为什么经过这里、会带来什么影响、出现问题由谁负责。</mark>
+              </p>
+              <p>
+                云游低空不是新的空管系统，而是连接居民、运营方与城市治理者的公共交互层。
+                它将专业运行数据翻译成生活可理解的信息，再让公众反馈回到航线与时段决策。
+              </p>
+            </div>
+          </div>
+
+          <div class="thesis-rail reveal" aria-label="项目叙事流程">
+            <div><span>01</span><strong>变化</strong><small>低空活动进入城市</small></div>
+            <div><span>02</span><strong>冲突</strong><small>生活影响不可理解</small></div>
+            <div><span>03</span><strong>转译</strong><small>专业数据变成解释</small></div>
+            <div><span>04</span><strong>协商</strong><small>反馈进入治理闭环</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="context section-dark" id="context" data-section="背景">
+        <div class="section-shell">
+          <div class="section-index">02 / Context</div>
+          <div class="section-heading light reveal">
+            <p class="eyebrow">为什么是深圳</p>
+            <h2>低空基础设施已开始成网，<br />公众体验仍停留在盲区。</h2>
+            <p>
+              深圳同时具备政策密度、产业基础、城市密度与真实应用场景，是观察低空运行与地面生活关系的前置样本。
+            </p>
+          </div>
+
+          <div class="city-system reveal">
+            <div class="context-evidence" aria-label="深圳低空经济公开数据">
+              <div class="evidence-head">
+                <div><span>公开数据基线</span><strong>深圳低空经济 · 2024</strong></div>
+                <small>来源：深圳市人民政府</small>
+              </div>
+              <div class="evidence-metrics">
+                <article><i data-lucide="package-check"></i><strong>77.6 万</strong><span>无人机载货飞行架次</span></article>
+                <article><i data-lucide="route"></i><strong>250 条</strong><span>已开通无人机航线</span></article>
+                <article><i data-lucide="map-pin-check"></i><strong>483 个</strong><span>各类型低空起降设施</span></article>
+                <article><i data-lucide="plane-takeoff"></i><strong>2.8 万</strong><span>直升机载人飞行架次</span></article>
+              </div>
+              <div class="evidence-conclusion">
+                <span>研究判断</span>
+                <p>基础设施和商业运行已经形成规模，公众侧需要同步获得可理解、可预测、可反馈的服务界面。</p>
+              </div>
+              <a class="source-link" href="https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_11964163.html">查看政府公开数据 <i data-lucide="arrow-up-right"></i></a>
+            </div>
+
+            <div class="context-stats">
+              <article>
+                <strong>1200+</strong>
+                <h3>2026 起降点目标</h3>
+                <p>形成社区、医院、商业区与交通枢纽的多层级网络。</p>
+              </article>
+              <article>
+                <strong>1000+</strong>
+                <h3>2026 商业航线目标</h3>
+                <p>物流、医疗、巡检、应急与未来载人场景持续增加。</p>
+              </article>
+              <article>
+                <strong>70%+</strong>
+                <h3>2026 快送人口覆盖目标</h3>
+                <p>效率提升越接近居民日常，解释与协商越不能缺席。</p>
+              </article>
+              <a class="target-source" href="https://www.sz.gov.cn/szzt2010/wgkzl/jcgk/jcygk/zdzcjc/content/post_12305127.html">《深圳市低空基础设施高质量建设方案（2024—2026年）》</a>
+            </div>
+          </div>
+
+          <div class="system-layers reveal">
+            <div class="layer-item">
+              <span>01</span>
+              <div><strong>专业运行层</strong><p>通信 · 导航 · 监视 · 空域 · 流量</p></div>
+              <small>安全运行</small>
+            </div>
+            <div class="layer-item">
+              <span>02</span>
+              <div><strong>城市治理层</strong><p>起降点 · 航线 · 运营商 · 风险事件</p></div>
+              <small>统筹监管</small>
+            </div>
+            <div class="layer-item highlight">
+              <span>03</span>
+              <div><strong>公众交互层</strong><p>告知 · 解释 · 反馈 · 偏好 · 回溯</p></div>
+              <small>本项目切入</small>
+            </div>
+          </div>
+
+          <p class="source-note">
+            来源：<a href="https://jtys.sz.gov.cn/attachment/1/1529/1529679/11921024.pdf" target="_blank" rel="noreferrer">深圳市交通运输局公开方案</a>；<a href="https://www.sz.gov.cn/attachment/1/1562/1562933/12090103.pdf" target="_blank" rel="noreferrer">深圳市政府公开政策文件</a>；项目桌面研究整理。
+          </p>
+        </div>
+      </section>
+
+      <section class="research section-paper" id="research" data-section="研究">
+        <div class="section-shell">
+          <div class="section-index">03 / Research</div>
+          <div class="research-intro">
+            <div class="section-heading reveal">
+              <p class="eyebrow">用户研究</p>
+              <h2>一次陌生飞行，<br />会制造五个连续断点。</h2>
+            </div>
+            <div class="research-methods reveal">
+              <span><i data-lucide="files"></i>政策与行业资料</span>
+              <span><i data-lucide="scan-eye"></i>情境观察</span>
+              <span><i data-lucide="messages-square"></i>居民视角归纳</span>
+              <span><i data-lucide="layers-3"></i>系统能力映射</span>
+            </div>
+          </div>
+
+          <div class="journey" aria-label="居民面对低空飞行时的体验旅程">
+            <article class="journey-step reveal">
+              <div class="journey-number">01</div>
+              <i data-lucide="ear"></i>
+              <h3>听见 / 看见</h3>
+              <p>陌生噪音或飞行器进入视野，却不知道它是什么。</p>
+              <span>来源不可见</span>
+            </article>
+            <article class="journey-step reveal">
+              <div class="journey-number">02</div>
+              <i data-lucide="circle-help"></i>
+              <h3>判断影响</h3>
+              <p>无法判断持续时间、是否拍摄、是否接近敏感区域。</p>
+              <span>影响不可知</span>
+            </article>
+            <article class="journey-step reveal">
+              <div class="journey-number">03</div>
+              <i data-lucide="search"></i>
+              <h3>寻找解释</h3>
+              <p>公开信息分散在专业平台，语言与生活场景脱节。</p>
+              <span>规则不可懂</span>
+            </article>
+            <article class="journey-step reveal">
+              <div class="journey-number">04</div>
+              <i data-lucide="message-square-warning"></i>
+              <h3>尝试反馈</h3>
+              <p>不知道向社区、运营商还是监管部门表达问题。</p>
+              <span>责任不可找</span>
+            </article>
+            <article class="journey-step reveal">
+              <div class="journey-number">05</div>
+              <i data-lucide="history"></i>
+              <h3>等待结果</h3>
+              <p>是否受理、如何核验、是否影响后续安排都不透明。</p>
+              <span>结果不可追</span>
+            </article>
+          </div>
+
+          <blockquote class="insight-quote reveal">
+            <span>核心洞察</span>
+            <p>
+              居民不一定反对低空飞行。<br />他们反对的是
+              <strong>无法预测、无法解释、无法回应</strong>的干扰。
+            </p>
+          </blockquote>
+
+          <div class="problem-grid">
+            <article class="persona reveal">
+              <div class="persona-avatar"><i data-lucide="user-round"></i></div>
+              <div>
+                <span>居民视角</span>
+                <h3>“我想知道它为什么来，以及什么时候离开。”</h3>
+                <ul>
+                  <li>需要生活语言，而非航空参数</li>
+                  <li>需要提前预期，而非事后公告</li>
+                  <li>需要处理结果，而非提交成功</li>
+                </ul>
+              </div>
+            </article>
+            <article class="hmw reveal">
+              <span>How might we</span>
+              <h3>如何把专业低空运行数据，转译成普通居民能理解、能判断、能参与的信息？</h3>
+              <i data-lucide="arrow-down-right"></i>
+            </article>
+          </div>
+
+          <p class="source-note">
+            来源：项目桌面研究、公开投诉场景与居民视角问题归纳。本阶段未虚构访谈样本，真实用户访谈与可用性测试列入后续验证计划。
+          </p>
+        </div>
+      </section>
+
+      <section class="competition section-light" id="competition" data-section="机会">
+        <div class="section-shell">
+          <div class="section-index">04 / Opportunity</div>
+          <div class="split-heading">
+            <div class="section-heading reveal">
+              <p class="eyebrow">竞品与机会</p>
+              <h2>能力都在“如何飞”，<br />缺口留在“如何被理解”。</h2>
+            </div>
+            <p class="lead-small reveal">
+              六类产品覆盖城市治理、专业作业和消费服务，却很少同时处理公众解释、社区偏好与反馈回流。
+            </p>
+          </div>
+
+          <div class="matrix-wrap reveal">
+            <div class="matrix-head">
+              <span>能力维度</span><span>SILAS</span><span>星图 / 天信</span><span>千寻</span><span>DJI</span><span>电信</span><span>美团</span>
+            </div>
+            <div class="matrix-row">
+              <strong>态势 / 空域</strong><i class="heat h3"></i><i class="heat h3"></i><i class="heat h1"></i><i class="heat h1"></i><i class="heat h2"></i><i class="heat h1"></i>
+            </div>
+            <div class="matrix-row">
+              <strong>航路 / 审批</strong><i class="heat h3"></i><i class="heat h3"></i><i class="heat h1"></i><i class="heat h2"></i><i class="heat h2"></i><i class="heat h1"></i>
+            </div>
+            <div class="matrix-row">
+              <strong>任务 / 飞控</strong><i class="heat h1"></i><i class="heat h1"></i><i class="heat h1"></i><i class="heat h3"></i><i class="heat h2"></i><i class="heat h2"></i>
+            </div>
+            <div class="matrix-row">
+              <strong>订单 / 履约</strong><i class="heat h0"></i><i class="heat h0"></i><i class="heat h0"></i><i class="heat h1"></i><i class="heat h0"></i><i class="heat h3"></i>
+            </div>
+            <div class="matrix-row opportunity-row">
+              <strong>公众解释</strong><i class="heat h1"></i><i class="heat h1"></i><i class="heat h0"></i><i class="heat h0"></i><i class="heat h0"></i><i class="heat h1"></i>
+            </div>
+            <div class="matrix-row opportunity-row">
+              <strong>反馈协商</strong><i class="heat h0"></i><i class="heat h0"></i><i class="heat h0"></i><i class="heat h0"></i><i class="heat h0"></i><i class="heat h1"></i>
+            </div>
+            <div class="matrix-legend"><span><i class="h0"></i>未覆盖</span><span><i class="h1"></i>基础</span><span><i class="h2"></i>较强</span><span><i class="h3"></i>核心</span></div>
+          </div>
+
+          <div class="opportunity-cards">
+            <article class="reveal">
+              <div class="opportunity-icon cyan"><i data-lucide="landmark"></i></div>
+              <span>城市治理底座</span>
+              <h3>借用态势与告警，重新组织公众语言。</h3>
+              <p>SILAS 与星图证明了数字空域能力，但信息仍以管理者为中心。</p>
+            </article>
+            <article class="reveal">
+              <div class="opportunity-icon blue"><i data-lucide="route"></i></div>
+              <span>专业作业闭环</span>
+              <h3>借用任务追踪，建立责任与结果回溯。</h3>
+              <p>DJI 擅长任务、飞控和异常处置，可转译为居民可追踪的事件状态。</p>
+            </article>
+            <article class="reveal">
+              <div class="opportunity-icon orange"><i data-lucide="package-check"></i></div>
+              <span>真实服务触点</span>
+              <h3>借用履约表达，让一次飞行有始有终。</h3>
+              <p>美团让订单进度清晰，却没有解释航线如何影响社区生活。</p>
+            </article>
+          </div>
+
+          <p class="source-note">
+            来源：SILAS、星图低空云、千寻位置、DJI FlightHub 2、中国电信、<a href="https://apps.apple.com/cn/app/%E5%A4%A9%E4%BF%A1%E4%BD%8E%E7%A9%BA%E9%80%9A/id6745680335" target="_blank" rel="noreferrer">天信低空通</a>及<a href="https://www.meituan.com/zh-HK/technology" target="_blank" rel="noreferrer">美团无人机</a>公开资料。矩阵为设计分析评分，不代表官方评价。
+          </p>
+        </div>
+      </section>
+
+      <section class="strategy section-mint" id="strategy" data-section="策略">
+        <div class="section-shell">
+          <div class="section-index">05 / Strategy</div>
+          <div class="section-heading reveal">
+            <p class="eyebrow">产品策略</p>
+            <h2>在专业系统之上，<br />补一层公共交互。</h2>
+            <p>不替代审批权，不复制空管大屏。只把低空活动转译成事件、影响、原因、责任和反馈状态。</p>
+          </div>
+
+          <div class="architecture reveal">
+            <div class="architecture-side input-side">
+              <span>治理 / 运营输入</span>
+              <ul>
+                <li><i data-lucide="route"></i>航线与任务计划</li>
+                <li><i data-lucide="badge-check"></i>审批与运营主体</li>
+                <li><i data-lucide="cloud-sun"></i>气象与禁飞信息</li>
+                <li><i data-lucide="triangle-alert"></i>异常告警与处置</li>
+              </ul>
+            </div>
+
+            <div class="architecture-core">
+              <span>云游低空</span>
+              <strong>公共感知<br />与协商层</strong>
+              <small>解释 · 告知 · 协商 · 回溯</small>
+            </div>
+
+            <div class="architecture-side output-side">
+              <span>居民端输出</span>
+              <ul>
+                <li><i data-lucide="bell-ring"></i>附近飞行通知</li>
+                <li><i data-lucide="scan-eye"></i>目的与影响解释</li>
+                <li><i data-lucide="shield-check"></i>隐私与安全边界</li>
+                <li><i data-lucide="message-circle-more"></i>反馈状态与结果</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="principles">
+            <article class="reveal"><span>01</span><i data-lucide="radar"></i><h3>可感知</h3><p>附近是否飞、来自哪里、持续多久。</p></article>
+            <article class="reveal"><span>02</span><i data-lucide="book-open-text"></i><h3>可解释</h3><p>任务目的、合规状态与影响边界。</p></article>
+            <article class="reveal"><span>03</span><i data-lucide="calendar-clock"></i><h3>可预测</h3><p>提前告知时间、频率与变化原因。</p></article>
+            <article class="reveal"><span>04</span><i data-lucide="handshake"></i><h3>可协商</h3><p>反馈、偏好和社区条件进入决策。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-ui" id="experience" data-section="体验">
+        <div class="section-shell wide-shell">
+          <div class="section-index">06 / Experience</div>
+          <div class="experience-head">
+            <div class="section-heading reveal">
+              <p class="eyebrow">高保真交互系统</p>
+              <h2>从选择低空服务，<br />到完成安全确认。</h2>
+            </div>
+            <div class="experience-switch" role="tablist" aria-label="高保真关键页面">
+              <button class="active" type="button" role="tab" aria-selected="true" data-screen="services">
+                <i data-lucide="layout-grid"></i><span>服务入口</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-screen="home">
+                <i data-lucide="home"></i><span>首页发现</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-screen="detail">
+                <i data-lucide="route"></i><span>航线详情</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-screen="safety">
+                <i data-lucide="shield-check"></i><span>安全确认</span>
+              </button>
+            </div>
+          </div>
+
+          <figure class="ui-system-board reveal">
+            <div class="ui-board-head">
+              <div><span class="ui-board-icon"><i data-lucide="plane"></i></span><strong>云游低空 Skyplume</strong></div>
+              <p>低空城市飞行体验 APP · 全流程原型交互设计 · 25 个页面</p>
+            </div>
+            <img src="assets/high-fidelity-ui.png" alt="云游低空高保真完整页面体系" />
+            <figcaption><span>主预约体验线</span><span>配套服务支线</span><span>AR 训练与个人系统</span></figcaption>
+          </figure>
+
+          <div class="resident-stage ui-resident-stage reveal">
+            <div class="ui-device-viewer" aria-label="云游低空高保真关键页面">
+              <img class="ui-screen-image active" data-panel="services" src="assets/ui-screens/02-services.png" alt="低空服务入口页面" />
+              <img class="ui-screen-image" data-panel="home" src="assets/ui-screens/03-home.png" alt="低空飞行服务首页" />
+              <img class="ui-screen-image" data-panel="detail" src="assets/ui-screens/04-route-detail.png" alt="城市天际线低空观光航线详情" />
+              <img class="ui-screen-image" data-panel="safety" src="assets/ui-screens/05-safety.png" alt="飞行安全确认页面" />
+            </div>
+
+            <div class="screen-rationale">
+              <div class="rationale-panel active" data-rationale="services">
+                <span>01 / 服务入口</span>
+                <h3>先按体验目的，而不是航空术语分流。</h3>
+                <p>低空观光、AR 航线训练、无人机配送和空域巡检使用四色编码，帮助用户快速建立产品范围。</p>
+                <dl><div><dt>信息架构</dt><dd>四类核心服务并列呈现</dd></div><div><dt>视觉语言</dt><dd>蓝 · 绿 · 紫 · 红类别编码</dd></div></dl>
+              </div>
+              <div class="rationale-panel" data-rationale="home">
+                <span>02 / 首页发现</span>
+                <h3>用航线卡片完成比较，用社区内容降低陌生感。</h3>
+                <p>价格、时长、风险与体验标签在同一层级呈现，同时保留飞友社区作为真实体验的辅助证据。</p>
+                <dl><div><dt>核心决策</dt><dd>快速筛选适合的飞行体验</dd></div><div><dt>信息密度</dt><dd>三条航线 + 一条社区动态</dd></div></dl>
+              </div>
+              <div class="rationale-panel" data-rationale="detail">
+                <span>03 / 航线详情</span>
+                <h3>把“好不好玩”和“是否安全”放进同一个决策页面。</h3>
+                <p>330m 高度、30 分钟、最多 4 人与安全保障共同呈现，避免体验价值和风险说明彼此割裂。</p>
+                <dl><div><dt>体验证据</dt><dd>时长 · 高度 · 人数 · 航线介绍</dd></div><div><dt>信任证据</dt><dd>监控 · 保险 · 运营商 · 气象</dd></div></dl>
+              </div>
+              <div class="rationale-panel" data-rationale="safety">
+                <span>04 / 安全确认</span>
+                <h3>高风险服务不靠一枚“同意”按钮草率带过。</h3>
+                <p>身份、健康、风险认知、飞行前状态和意外保险被拆成五项逐条确认，形成明确的知情同意。</p>
+                <dl><div><dt>风险控制</dt><dd>五项前置确认缺一不可</dd></div><div><dt>状态反馈</dt><dd>按钮同步显示完成数量</dd></div></dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="resident-flow reveal">
+            <span>选择服务</span><i data-lucide="arrow-right"></i><span>筛选航线</span><i data-lucide="arrow-right"></i><span>阅读详情</span><i data-lucide="arrow-right"></i><span>填写预约</span><i data-lucide="arrow-right"></i><span>安全确认</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="governance section-sand" id="governance" data-section="治理端">
+        <div class="section-shell wide-shell">
+          <div class="section-index">07 / Governance</div>
+          <div class="split-heading">
+            <div class="section-heading reveal">
+              <p class="eyebrow">治理端体验</p>
+              <h2>把居民感知，纳入航线审批与运行复盘。</h2>
+            </div>
+            <p class="lead-small reveal">管理端不仅看飞行安全，也要看到地面影响、投诉压力与社区可接受条件。</p>
+          </div>
+
+          <div class="governance-evidence reveal">
+            <div class="governance-evidence-head">
+              <div><span>真实运行基础 · 2025</span><h3>治理设计建立在已发生的城市运行之上</h3></div>
+              <p>深圳已实现飞行计划审批流程闭环；本项目进一步补足公众解释、影响反馈与运行复盘。</p>
+            </div>
+            <div class="governance-facts">
+              <article><strong>1284</strong><span>已建成低空起降点</span></article>
+              <article><strong>310</strong><span>已开通货运航线</span></article>
+              <article><strong>100 万+</strong><span>无人机载货运输架次</span></article>
+              <article><strong>9685</strong><span>5G-A 及通感基站</span></article>
+            </div>
+            <div class="governance-chain" aria-label="治理闭环逻辑">
+              <article><span>01</span><i data-lucide="clipboard-check"></i><strong>计划审批</strong><small>任务、航线与责任主体</small></article>
+              <i data-lucide="arrow-right"></i>
+              <article><span>02</span><i data-lucide="message-circle-more"></i><strong>公众解释</strong><small>时间、目的与影响边界</small></article>
+              <i data-lucide="arrow-right"></i>
+              <article><span>03</span><i data-lucide="inbox"></i><strong>影响反馈</strong><small>位置、时段与问题归因</small></article>
+              <i data-lucide="arrow-right"></i>
+              <article><span>04</span><i data-lucide="history"></i><strong>运行复盘</strong><small>反馈进入下一轮配置</small></article>
+            </div>
+            <a class="governance-source" href="https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12657458.html">来源：深圳政府在线《深圳竞逐“低空经济第一城”》 <i data-lucide="arrow-up-right"></i></a>
+          </div>
+
+          <div class="governance-values">
+            <article class="reveal"><span>01</span><h3>识别影响热区</h3><p>将投诉位置、时间、噪音预测与航线叠加。</p></article>
+            <article class="reveal"><span>02</span><h3>生成审批建议</h3><p>平衡任务优先级、运行效率与社区条件。</p></article>
+            <article class="reveal"><span>03</span><h3>发布公众解释</h3><p>把专业判断生成面向居民的简洁说明。</p></article>
+            <article class="reveal"><span>04</span><h3>回传处理结果</h3><p>让一次反馈真正改变后续路线或时段。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="validation section-light" id="validation" data-section="验证">
+        <div class="section-shell">
+          <div class="section-index">08 / Validation</div>
+          <div class="split-heading">
+            <div class="section-heading reveal">
+              <p class="eyebrow">验证与下一步</p>
+              <h2>从证据到策略，再到体验与验证，<br />每一步都形成可追溯的设计闭环。</h2>
+            </div>
+            <p class="lead-small reveal">每一项界面决策都能回到前期研究假设，并在测试指标中被验证；作品集不只展示结果，也完整呈现问题如何被定义、转译与收敛。</p>
+          </div>
+
+          <div class="test-plan">
+            <article class="test-task reveal"><span>任务 01</span><div class="test-icon"><i data-lucide="route"></i></div><h3>选出合适航线</h3><p>用户能否依据时长、价格、风险与体验类型完成首次选择。</p><small>观察：完成时间 / 筛选路径</small></article>
+            <article class="test-task reveal"><span>任务 02</span><div class="test-icon"><i data-lucide="shield-check"></i></div><h3>理解服务与安全</h3><p>用户能否读懂飞行高度、最大人数、安全保障与服务边界。</p><small>观察：信息遗漏 / 理解偏差</small></article>
+            <article class="test-task reveal"><span>任务 03</span><div class="test-icon"><i data-lucide="calendar-check-2"></i></div><h3>完成预约确认</h3><p>用户能否独立填写时段、人数与附加需求，并完成安全确认。</p><small>观察：路径错误 / 中途退出</small></article>
+          </div>
+
+          <div class="iteration-block reveal">
+            <div class="iteration-title"><span>关键迭代方向</span><h3>从展示“飞行数据”，转向解释“它与你的关系”。</h3></div>
+            <div class="before-after">
+              <div class="iteration-side before"><span>早期表达</span><strong>高度 82m · 速度 11m/s<br />航线 MED-A-0248</strong><small>参数准确，但居民难以判断影响</small></div>
+              <div class="iteration-arrow"><i data-lucide="arrow-right"></i></div>
+              <div class="iteration-side after"><span>转译后</span><strong>4 分钟后经过小区东侧<br />低噪音 · 无拍摄任务</strong><small>优先回答时间、位置、原因和边界</small></div>
+            </div>
+          </div>
+
+          <div class="impact-loop reveal">
+            <div class="loop-heading">
+              <div class="loop-core"><i data-lucide="refresh-cw"></i><strong>公共信任来自<br />持续运行的闭环</strong></div>
+              <p>每一次服务发布、用户理解与真实反馈，都需要回到下一轮飞行配置，而不是停在一次告知。</p>
+            </div>
+            <div class="loop-steps" aria-label="低空服务治理闭环">
+              <article class="loop-step"><span>01</span><strong>飞行计划</strong><small>运营方提交任务与运行条件</small></article>
+              <i class="loop-arrow" data-lucide="arrow-right" aria-hidden="true"></i>
+              <article class="loop-step"><span>02</span><strong>服务与告知</strong><small>把路线、安全与价格转译给用户</small></article>
+              <i class="loop-arrow" data-lucide="arrow-right" aria-hidden="true"></i>
+              <article class="loop-step"><span>03</span><strong>理解与反馈</strong><small>记录选择、疑问与实际影响</small></article>
+              <i class="loop-arrow" data-lucide="arrow-right" aria-hidden="true"></i>
+              <article class="loop-step"><span>04</span><strong>治理优化</strong><small>调整航线、时段与信息规则</small></article>
+            </div>
+            <div class="loop-return"><i data-lucide="rotate-ccw"></i><span>优化结果重新进入下一轮飞行计划</span><strong>更清晰 · 更可预测 · 更可信</strong></div>
+          </div>
+
+          <div class="reflection-grid">
+            <div class="section-heading reveal"><p class="eyebrow">项目反思</p><h2>真正困难的不是画地图，<br />而是决定哪些信息应该被看见。</h2></div>
+            <div class="reflection-list reveal">
+              <article><span>01</span><p>公开透明与隐私保护之间，需要明确的数据边界和解释责任。</p></article>
+              <article><span>02</span><p>社区偏好不能直接等于禁飞规则，需要与任务公共价值共同评估。</p></article>
+              <article><span>03</span><p>后续需要接入真实航迹、噪音与反馈数据，验证系统是否改善信任。</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" data-section="结语">
+        <img class="logo-entrance" src="assets/logo-poster.png" alt="Skyplume logo" />
+        <div class="closing-copy reveal">
+          <span>YUNYOU LOW ALTITUDE</span>
+          <h2>让每一次飞行，<br />都有原因，也有回应。</h2>
+          <a href="#top">返回项目开头<i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>云游低空 · UX / Service Design Portfolio</span>
+      <span>Research · Strategy · Interface · Motion</span>
+      <span>2026</span>
+    </footer>
+
+    <script src="assets/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
