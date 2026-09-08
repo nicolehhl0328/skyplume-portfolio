@@ -69,6 +69,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }).forEach(([key, value]) => english.set(key, value));
 
   Object.entries({
+    "他们反对的是": "What they resist is",
+    "云游低空 Skyplume": "Skyplume",
+    "《深圳市低空基础设施高质量建设方案（2024—2026年）》": "Shenzhen Low-Altitude Infrastructure High-Quality Development Plan (2024–2026)",
+    "来源：深圳市交通运输局公开方案": "Source: Shenzhen Transport Bureau public plan",
+    "；项目桌面研究整理。": "; compiled from project desk research.",
+    "来源：项目桌面研究、公开投诉场景与居民视角问题归纳。本阶段未虚构访谈样本，真实用户访谈与可用性测试列入后续验证计划。": "Source: project desk research, public complaint scenarios and resident-perspective synthesis. No interview samples were fabricated; real interviews and usability tests are planned for the next validation phase.",
+    "来源：SILAS、星图低空云、千寻位置、DJI FlightHub 2、中国电信、": "Source: SILAS, Xingtu Low-Altitude Cloud, Qianxun Location, DJI FlightHub 2, China Telecom, ",
+    "深圳已实现飞行计划审批流程闭环；本项目进一步补足公众解释、影响反馈与运行复盘。": "Shenzhen has closed the loop for flight-plan approval; this project adds public explanation, impact feedback and operational review.",
+    "来源：深圳政府在线《深圳竞逐“低空经济第一城”》": "Source: Shenzhen Government Online, Shenzhen Competes to Become the Leading Low-Altitude Economy City",
+    "每一项界面决策都能回到前期研究假设，并在测试指标中被验证；作品集不只展示结果，也完整呈现问题如何被定义、转译与收敛。": "Every interface decision traces back to an early research hypothesis and forward to a validation metric. The portfolio shows not only outcomes, but how the problem was defined, translated and refined.",
+    "用户能否依据时长、价格、风险与体验类型完成首次选择。": "Can users make an initial choice using duration, price, risk and experience type?",
+    "用户能否独立填写时段、人数与附加需求，并完成安全确认。": "Can users independently choose a time and group size, add requirements and complete the safety check?",
+    "优化结果重新进入下一轮飞行计划": "Improvements feed into the next flight plan",
+    "后续需要接入真实航迹、噪音与反馈数据，验证系统是否改善信任。": "Next, real trajectory, noise and feedback data should test whether the system genuinely improves trust.",
+    "航线 MED-A-0248": "Route MED-A-0248",
+    "？": "?", "；": "; "
+  }).forEach(([key, value]) => english.set(key, value));
+
+  Object.entries({
     "77.6 万": "776K", "250 条": "250", "483 个": "483", "2.8 万": "28K", "100 万+": "1M+", "来源：": "Source: ",
     "深圳市交通运输局公开方案": "Shenzhen Transport Bureau public plan", "深圳市政府公开政策文件": "Shenzhen government policy documents",
     "星图 / 天信": "Xingtu / Tianxin", "千寻": "Qianxun", "电信": "China Telecom", "美团": "Meituan", "天信低空通": "Tianxin Low-Altitude Mobility", "美团无人机": "Meituan Drones", "及": "and ", "公开资料。矩阵为设计分析评分，不代表官方评价。": "public materials. The matrix is a design-analysis score, not an official assessment.",
