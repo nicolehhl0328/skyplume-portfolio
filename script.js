@@ -96,29 +96,51 @@ document.addEventListener("DOMContentLoaded", () => {
     "每一次服务发布、用户理解与真实反馈，都需要回到下一轮飞行配置，而不是停在一次告知。": "Every service release, user interpretation and real response must inform the next flight configuration instead of ending with a one-way notice.", "公开透明与隐私保护之间，需要明确的数据边界和解释责任。": "Transparency and privacy require explicit data boundaries and accountability for explanation.", "社区偏好不能直接等于禁飞规则，需要与任务公共价值共同评估。": "Community preferences cannot automatically become no-fly rules; they must be weighed against a mission's public value."
   }).forEach(([key, value]) => english.set(key, value));
 
+  const chinese = new Map(Object.entries({
+    "01 / Project thesis": "01 / 项目命题",
+    "02 / Context": "02 / 背景",
+    "03 / Research": "03 / 研究",
+    "04 / Opportunity": "04 / 机会",
+    "05 / Strategy": "05 / 策略",
+    "06 / Experience": "06 / 体验",
+    "07 / Governance": "07 / 治理",
+    "08 / Validation": "08 / 验证",
+    "UX / Service Design · Shenzhen · 2026": "用户体验 / 服务设计 · 深圳 · 2026",
+    "UX / SERVICE DESIGN": "用户体验 / 服务设计",
+    "How might we": "我们如何能够",
+    "YUNYOU LOW ALTITUDE": "云游低空",
+    "云游低空 Skyplume": "云游低空",
+    "云游低空 · UX / Service Design Portfolio": "云游低空 · 用户体验 / 服务设计作品集",
+    "Research · Strategy · Interface · Motion": "研究 · 策略 · 界面 · 动效",
+    "APP": "应用",
+    "Source:": "来源："
+  }));
+
   const translatableNodes = [];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       if (!node.nodeValue.trim() || node.parentElement?.closest("script, style")) return NodeFilter.FILTER_REJECT;
-      return /[\u3400-\u9fff]/.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
     },
   });
   while (walker.nextNode()) {
     const node = walker.currentNode;
-    translatableNodes.push({ node, zh: node.nodeValue, key: node.nodeValue.trim() });
+    translatableNodes.push({ node, original: node.nodeValue });
   }
 
   const languageButtons = [...document.querySelectorAll("[data-lang]")];
   function setLanguage(language) {
     const useEnglish = language === "en";
-    translatableNodes.forEach(({ node, zh, key }) => {
-      if (!useEnglish) {
-        node.nodeValue = zh;
-        return;
-      }
-      node.nodeValue = [...english.entries()]
+    const dictionary = useEnglish ? english : chinese;
+    const entries = [...dictionary.entries()].sort((a, b) => b[0].length - a[0].length);
+    translatableNodes.forEach(({ node, original }) => {
+      node.nodeValue = entries
         .sort((a, b) => b[0].length - a[0].length)
-        .reduce((value, [source, translated]) => value.replaceAll(source, translated), zh);
+        .reduce((value, [source, translated]) => value.replaceAll(source, translated), original);
+    });
+    document.querySelectorAll("[data-src-en][data-src-zh]").forEach((image) => {
+      image.src = useEnglish ? image.dataset.srcEn : image.dataset.srcZh;
+      image.alt = useEnglish ? image.dataset.altEn : image.dataset.altZh;
     });
     document.documentElement.lang = useEnglish ? "en" : "zh-CN";
     languageButtons.forEach((button) => {
