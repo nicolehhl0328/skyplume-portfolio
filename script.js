@@ -113,6 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "云游低空 · UX / Service Design Portfolio": "云游低空 · 用户体验 / 服务设计作品集",
     "Research · Strategy · Interface · Motion": "研究 · 策略 · 界面 · 动效",
     "APP": "应用",
+    "App": "应用",
+    "AR": "增强现实",
     "Source:": "来源："
   }));
 
